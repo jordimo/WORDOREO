@@ -42,7 +42,7 @@ export const generateEmojiGrid = (guesses: string[], tiles: string[]) => {
 const getEmojiTiles = (isDarkMode: boolean, isHighContrastMode: boolean) => {
   let tiles: string[] = []
   tiles.push('⚪')
-  tiles.push('⚽' )
+  tiles.push('🔘' )
   tiles.push( '⚫')
   return tiles
 }
