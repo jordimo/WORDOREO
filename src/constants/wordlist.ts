@@ -4,3 +4,4 @@ export const WORDS = [
   'twist',
   'licks'
   ]
+
