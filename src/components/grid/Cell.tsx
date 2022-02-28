@@ -24,13 +24,13 @@ export const Cell = ({
   const isHighContrast = getStoredIsHighContrastMode()
 
   const classes = classnames(
-    'w-14 h-14 rounded-full bg-black flex items-center justify-center mx-0.5 text-4xl font-bold font-pluto',
+    'w-14 h-14 rounded-full flex items-center justify-center mx-0.5 text-4xl font-bold font-pluto',
     {
-      'text-white bg-green': !status,
-      'border-black bg-green ': value && !status,
-      'absent shadowed border-black text-slate-600': status === 'absent',
+      'text-white bg-black ': !status,
+      'border-black bg-black  ': value && !status,
+      'absent shadowed bg-black  border-black text-slate-600': status === 'absent',
       'correct bg-white border-black text-black border-4': status === 'correct',
-      'present shadowed text-white border--0': status === 'present',
+      'present shadowed bg-black  text-white border-0': status === 'present',
       'cell-fill-animation': isFilled,
       'cell-reveal': shouldReveal,
     }
