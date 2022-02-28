@@ -9,7 +9,7 @@ type Props = {
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
+      <p className="text-sm text-white">
         Guess the word in 6 tries. After each guess, the color of the tiles will
         change to show how close your guess was to the word.
       </p>
@@ -26,7 +26,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="R" status="absent"/>
         <Cell value="Y" status="absent"/>
       </div>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
+      <p className="text-sm text-white">
         The letter W is in the word and in the correct spot.
       </p>
 
@@ -42,7 +42,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="O" status="absent"/>
         <Cell value="T" status="absent"/>
       </div>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
+      <p className="text-sm text-white">
         The letter L is in the word but in the wrong spot.
       </p>
 
@@ -53,7 +53,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
         <Cell value="E" />
       </div>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
+      <p className="text-sm text-white">
         The letter U is not in the word in any spot.
       </p>
 

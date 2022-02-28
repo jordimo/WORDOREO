@@ -151,6 +151,9 @@ svg:hover {
     transform: scale(1);
   }
 }
+.bg-oreo-blue {
+  background-color: #0058C9
+}
 
 .shadowed {
   text-shadow: 1px 1px 1px #000000;

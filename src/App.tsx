@@ -262,7 +262,7 @@ function App() {
           {GAME_TITLE}
         </h1>
         <InformationCircleIcon
-          className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
+          className="h-6 w-6 mr-2 cursor-pointer stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
         />
         {/* <ChartBarIcon
